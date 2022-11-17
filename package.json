@@ -1,0 +1,18 @@
+{
+  "name": "crate-version",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "github.com/colathro/crate-version",
+  "author": "colathro",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@iarna/toml": "^2.2.5"
+  }
+}

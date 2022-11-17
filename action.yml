@@ -1,0 +1,20 @@
+name: "Crate Version"
+description: "Gets the version from a passed Cargo.toml file location."
+author: "colathro"
+
+branding:
+  icon: "file"
+  color: "blue"
+
+inputs:
+  file:
+    description: "The relative path of toml file"
+    required: true
+
+outputs:
+  version:
+    description: "The version of the crate"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
