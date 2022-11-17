@@ -1,4 +1,4 @@
-name: "Crate Version"
+name: "Rust Crate Version"
 description: "Gets the version from a passed Cargo.toml file location."
 author: "colathro"
 

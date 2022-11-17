@@ -1,6 +1,6 @@
 # crate-version
 
-This is a Github action, you can use it to edit your toml file. Read more about those here:
+This is a Github action, you can use it to extract your Rust crate version. Read more about those here:
 [https://developer.github.com/actions/](https://developer.github.com/actions/)
 
 ## Usage
@@ -8,12 +8,11 @@ This is a Github action, you can use it to edit your toml file. Read more about 
 `workflow.yml`
 
 ```yaml
-- name: TOML Editor V2
-  uses: colathro/toml-editor@1.1.0
+- name: Crate Version
+  id: crate-version
+  uses: colathro/crate-version@1.0.0
   with:
-    file: "file/path/xx.toml"
-    key: "a.b.c"
-    value: "abc"
+    file: "./Cargo.toml"
 ```
 
 ### Arguments
